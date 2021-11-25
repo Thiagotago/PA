@@ -3,34 +3,27 @@ Algoritmo "semnome"
 //  
 // Descrição   : Aqui você descreve o que o programa faz! (função)
 // Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 29/10/2021
+// Data atual  : 25/11/2021
 Var
-a,b,c: real
+ini, final, cont : inteiro
 
 
 Inicio
-escreval ("Digite o primeiro lado do triangulo")
-leia(a)
-escreval ("Digite o segundo lado do triangulo")
-leia(b)
-escreval ("Digite o terceiro lado do triangulo")
-leia(c)
+escreval("digite o valor inicial do contador")
+leia(ini)
+escreval("digite o valor inicial do contador")
+leia(final)
 
-se ((a<(b+c)) e (a >(abs(b-c)))) e  ((b<(a+c)) e (b >(abs(a-c)))) e ((c<(b+a)) e (c >(abs(b-a)))) entao
 
-se ((a=b) e (b=c) e (a=c)) entao
-   escreval("Triangulo Equilatero")
-   fimse
-se ((a<>b) e (b<>c) e (a<>c)) entao
-   escreval("Triangulo Escaleno")
-   fimse
-se(((a=b) e (b<>c)) ou ((b=c) e (c<>a)) ou ((a=c) e (c<>b))) entao
-   escreval("Triangulo Isóceles")
-   fimse
-
+se(ini<=final)entao
+   para cont de ini ate final faca
+       escreval(cont,"...")
+   fimpara
 senao
-
-     escreval("Valore não formam um triangulo")
-     
+   para cont de ini ate final passo -1 faca
+       escreval(cont,"...")
+   fimpara
 fimse
+
+
 Fimalgoritmo

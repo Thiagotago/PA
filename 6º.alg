@@ -3,28 +3,32 @@ Algoritmo "semnome"
 //  
 // Descrição   : Aqui você descreve o que o programa faz! (função)
 // Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 30/10/2021
+// Data atual  : 25/11/2021
 Var
-salario, resp:real
+vet : vetor[1..10] de inteiro
+x, y, troca: inteiro
 
 
 Inicio
-escreval("Qual seu salario?")
-leia(salario)
-
-se (salario <= 1500) entao
-resp <- salario * 1.20
-fimse
-
-se ((salario >= 1501) e (salario <= 3000)) entao
-resp <- salario * 1.15
-fimse
-
-se (salario >= 3001) entao
-resp <- salario * 1.10
-fimse
-
-escreval("Seu salario agora é de: R$", resp)
+ para x de 1 ate 10 faca
+ vet[x] <- randi(100) +1
+ escreval(vet[x])
+ fimpara
+ 
+ para x de 1 ate 9 faca
+    para y de x+1 ate 10 faca
+    se(vet[x] > vet[x])entao
+    troca <- vet[x]
+    vet[x] <- vet[y]
+    vet[y] <- troca
+    fimse
+    fimpara
+    fimpara
+    
+    escreval("Vetor Ordenado")
+    para x de 1 ate 10 faca
+    escreval(vet[x])
+    fimpara
 
 
 Fimalgoritmo

@@ -3,22 +3,19 @@ Algoritmo "semnome"
 //  
 // Descrição   : Aqui você descreve o que o programa faz! (função)
 // Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 29/10/2021
+// Data atual  : 25/11/2021
 Var
-num: inteiro
+num, resul, cont: inteiro
 
 
 Inicio
+escreval("Digite um valor para montar a tabuada")
 leia(num)
 
-se (num mod 2)=0 entao
+para cont de 1 ate 20 faca
+    resul<- num * cont
+    escreval(num, " X " ,cont," = ",resul)
+fimpara
 
-    escreval("Par")
-
-senao
-
-     escreval("Impar")
-     
-fimse
 
 Fimalgoritmo

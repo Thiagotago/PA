@@ -3,27 +3,31 @@ Algoritmo "semnome"
 //  
 // Descrição   : Aqui você descreve o que o programa faz! (função)
 // Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 30/10/2021
+// Data atual  : 25/11/2021
 Var
-altura: real
-idade: inteiro
+pessoas :vetor[1..4, 1..3] de caractere
+
+x: inteiro
 
 
 Inicio
-escreval("Qual sua altura? coloque no lugar da virgula o ponto")
-leia(altura)
-escreval("Qual sua idade?")
-leia(idade)
+para x de 1 ate 2 faca
 
-se ((idade >= 18) e (altura >= 1.75))  entao
+    escreva("nome ", x, ":")
+    leia(pessoas[x,1])
+    escreva("email ", x, ":")
+    leia(pessoas[x,2])
+    escreva("fone ", x, ":")
+    leia(pessoas[x,3])
+    
+    limpatela
 
-escreval("pode competir")
+fimpara
+escreval("Dados Preenchidos")
 
-senao
-
-escreval("você não pode competir")
-
-fimse
+para x de 1 ate 2 faca
+    escreval(pessoas[x,1]," - ", pessoas[x,2]," - ", pessoas[x,3])
+fimpara
 
 
 Fimalgoritmo
